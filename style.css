@@ -61,6 +61,7 @@ body {
     letter-spacing: 0.05em; /* увеличивает расстояние и визуально "разгружает" текст */
     margin: 0;
     padding: 0;
+    margin-top: 10px;
   }
     
   .about-section ul {
