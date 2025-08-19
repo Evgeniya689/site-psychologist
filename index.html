@@ -7,17 +7,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>ПСИХОЛОГ</h1>
+  <section class="hero">
+    <h1 class="hero-title">ПСИХОЛОГ</h1>
     <img src="women.png" class="center-image" />
-  </header>
-  <h5 class="subtitle" style="text-align: right; color: white;">Мирана Рэй</h5>
-  <div class="centered-button">
-    <button class="glow-on-hover" onclick="scrollToTable()">Записаться на консультацию</button>
-</div>
+  
+    <div class="overlay-content">
+      <div class="subtitle-wrapper">
+        <h5 class="main-subtitle">Мирана Рэй</h5>
+      </div>
+      <div class="button-wrapper">
+        <button class="glow-on-hover" onclick="scrollToTable()">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</button>
+      </div>
+    </div>
+  </section>
 
   <main>
-    <section class="about-section">
+    <section class="about-wrapper">
+      <!-- Левая колонка -->
+      <div class="about-left">
         <h5 class="subtitle" style="text-align: center;">Кто я?</h5>
         <h3 style="text-align: left;">ОБО МНЕ</h3>
         <ul>
@@ -26,21 +33,25 @@
           <li style="margin-left: 20%;">Использую в своей работе различные техники.</li>
           <li style="margin-left: 30%;">Качественно и быстро решаю Ваши проблемы!</li>
         </ul>
-
+      </div>
+    
+      <!-- Правая колонка -->
+      <div class="about-right">
+        <h5 class="subtitle" style="text-align: center;">С чем я работаю?</h5>
         <h3 style="text-align: right;">ЗАПРОСЫ</h3>
-        <h5 class="subtitle">С чем я работаю?</h5>
         <ul>
-          <li>кризисы (не знаешь куда дальше двигаться, нет четкого понимания как дальше жить)</li>
-          <li>горе (со мной безопасно и безоценочно о переживаниях, обсуждение трудных эмоций)</li>
-          <li>развод, смерть, смена работы (адаптация к новой жизненной ситуации, переход через тяжелые периоды)</li>
-          <li>психосоматика (работа над физическими проявлениями стресса и понимание причин, вызывающих их)</li>
-          <li>семейные проблемы (разрешение конфликтов и улучшение взаимоотношений)</li>
-          <li>зависимость/созависимость (жить без него/неё не могу)</li>
-          <li>неразрешённые вопросы (то, с чем не разобрался Ваш психолог)</li>
+          <li>Кризисы (не знаешь куда дальше двигаться, нет четкого понимания как дальше жить)</li>
+          <li>Горе (со мной безопасно и безоценочно о переживаниях, обсуждение трудных эмоций)</li>
+          <li>Развод, смерть, смена работы (адаптация к новой жизненной ситуации, переход через тяжелые периоды)</li>
+          <li>Психосоматика (работа над физическими проявлениями стресса и понимание причин, вызывающих их)</li>
+          <li>Семейные проблемы (разрешение конфликтов и улучшение взаимоотношений)</li>
+          <li>Зависимость/созависимость (жить без него/неё не могу)</li>
+          <li>Неразрешённые вопросы (то, с чем не разобрался Ваш психолог)</li>
         </ul>
+      </div>
     </section>
       
-    <section id="services">
+    <section id="services" style="margin-top: 10%;">
         <div>
             <h3 style="text-align: center;">ПРАЙС</h3>
         </div>
@@ -83,11 +94,15 @@
             </tr>
           </table>          
         <br>
+
+      <h5 class="subtitle" style="text-align: center;">Связь со мной</h5>
+      <h3 style="text-align: center; margin-top: 20px;">КОНТАКТЫ</h3>
+
       <div class="glow-button-container">
         <button class="fancy-button" onclick="window.open('https://t.me/yourtelegram', '_blank')">Перейти в телеграмм</button>
         <button class="fancy-button" onclick="window.open('https://vk.com/yourvk', '_blank')">Перейти в вконтакте</button>
       </div>
-      <h3 style="text-align: center; margin-top: 20px;">КОНТАКТЫ</h3>
+
     </section>
 
   </main>
